@@ -37,8 +37,3 @@ function Secret(event) {
     }
 }
 document.addEventListener('keydown', Secret);
-
-//Change theme color
-document.getElementById('theme-toggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-});
