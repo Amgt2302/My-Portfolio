@@ -24,6 +24,7 @@ jobs:
           port: 21
           local-dir: ./
           server-dir: /www/
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             .github/
