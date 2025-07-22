@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Désactiver l'indexation de tous les répertoires
+Options -Indexes

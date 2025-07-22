@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Porfolio</title>
+    <link rel="icon" href="/asset/img/Web-icon.png">
+    <link rel="stylesheet" href="/asset/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
 <body>
-    <h1>Hello world !</h1>
+    <header>
+        <div class="container">
+            <h1>Anthony MIGNOT</h1>
+            <nav>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#" id="theme-toggle"><img src="/asset/icon/btn-icon.png" alt="Mode sombre" width="24"  height="24" /></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Développement & Sécurité</h2>
+    </section>
+
+    <section id="about">
+        <h3>À propos</h3>
+        <p>
+            <strong>Hey !</strong><br>
+            Je m'appelle Anthony, j'ai 20 ans, je suis Etudiant passionné par le développement et la sécurité
+            informatique,
+            J'adore apprendre de nouvelles choses sur la technologie, je crée régulièrement
+            de petits projets, souvent des mini-jeux pour expérimenter.
+        </p>
+        <p>
+            Aujourd'hui, je code principalement en JavaScript, HTML/CSS, Python et C++.<br>
+            J'explore tous les domaines de l'informatique, de la conception, à la programation en passant par le reseau,
+            et l'electronique.
+        </p>
+        <p>What I live by : <em>Stay curious, keep learning and never give up :)</em></p>
+    </section>
+
+    <section id="projects">
+        <h3>Mes Projets & Réalisations</h3>
+        <p>Voici un aperçu des projets que j'ai réalisés ainsi que ceux sur lesquels je travaille actuellement. </p>
+        <a href="https://amgt2302.github.io/" target="_blank">Mes Projets & Réalisations</a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; <span id="Auto-Year"></span> - Tous droits réservés</p>
+            <div class="social-icons">
+                <a href="https://github.com/Amgt2302" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://discord.com/users/547150665097674772" aria-label="Discord" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://linkedin.com/in/anthony-mignot" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:anthomignot.pro@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+</script>
+<script src="/asset/script.js"></script>
+
 </html>
